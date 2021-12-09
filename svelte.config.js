@@ -21,14 +21,14 @@ const config = {
     adapter: adapter({
 			// default options are shown
 			pages: 'docs',
-			assets: 'docs',
+			assets: 'docs/assets',
 			fallback: null
 		}),
-		appDir: '../assets',
-		paths: {
-			// base: dev ? '' : '/relicjs.github.io',
-			base: ''
-		},
+		appDir: 'assets',
+		// paths: { 
+		// 	// base: dev ? '' : '/relicjs.github.io',
+		// 	base: ''
+		// },
 
     // hydrate the <div id="svelte"> element in src/app.html
     target: "#svelte",

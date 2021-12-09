@@ -1,1 +1,0 @@
-import{S as e,i as n,s as r}from"../../chunks/vendor-25098d27.js";function o({error:s,status:t}){return{status:301,redirect:"/guide/installation"}}class u extends e{constructor(t){super();n(this,t,null,null,r,{})}}export{u as default,o as load};

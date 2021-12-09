@@ -22,7 +22,7 @@ const config = {
   kit: {
     adapter: adapter(),
 		// appDir: '',
-		paths: { 
+		paths: {
 			// base: dev ? '' : '/relicjs.github.io',
 			base: '',
 		},

@@ -1,5 +1,12 @@
 <script>
+	import { onMount } from 'svelte';
+	import hljs from 'highlight.js';
+	import 'highlight.js/styles/night-owl.css';
 	import '../app.css';
+
+	onMount(() => {
+		hljs.highlightAll();
+	})
 </script>
 
 <div class="navbar mb-2 shadow-lg bg-neutral text-neutral-content">
@@ -10,10 +17,10 @@
 	</div> 
 	<div class="hidden px-2 mx-2 navbar-center lg:flex">
 	  <div class="flex items-stretch">
-		<a href="/" class="btn btn-ghost btn-sm rounded-btn">Home</a>
-		<a href="/guide" class="btn btn-ghost btn-sm rounded-btn">Guide</a>
-		<a href="/docs" class="btn btn-ghost btn-sm rounded-btn">Docs</a>
-		<a href="/contribute" class="btn btn-ghost btn-sm rounded-btn">Contribute</a>
+		<!-- <a href="/" class="btn btn-ghost btn-sm rounded-btn">Home</a> -->
+		<a href="/guide/installation" class="btn btn-ghost btn-sm rounded-btn">Guide</a>
+		<a href="/docs/components/alert" class="btn btn-ghost btn-sm rounded-btn">Docs</a>
+		<a href="https://github.com/relicjs/relicjs" class="btn btn-ghost btn-sm rounded-btn">Contribute</a>
 	  </div>
 	</div> 
 	<div class="navbar-end">

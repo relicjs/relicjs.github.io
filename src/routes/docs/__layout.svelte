@@ -19,14 +19,6 @@
 </script>
 
 <script>
-	import hljs from 'highlight.js';
-	import 'highlight.js/styles/night-owl.css';
-	import { onMount } from 'svelte';
-
-	onMount(() => {
-		hljs.highlightAll();
-	})
-	
 	export let menu;
 </script>
 

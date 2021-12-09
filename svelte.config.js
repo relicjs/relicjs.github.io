@@ -24,7 +24,7 @@ const config = {
 			assets: 'docs',
 			fallback: null
 		}),
-		appDir: 'assets',
+		appDir: '../assets',
 		paths: {
 			// base: dev ? '' : '/relicjs.github.io',
 			base: ''

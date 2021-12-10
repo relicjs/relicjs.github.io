@@ -7,7 +7,9 @@ const config = {
   },
 
   plugins: [
-    require('daisyui'),
+    require('@tailwindcss/forms'),
+		require('@tailwindcss/typography'),
+		require('daisyui')
   ],
 };
 

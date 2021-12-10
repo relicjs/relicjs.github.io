@@ -1,5 +1,3 @@
-<div class="prose">
-
 # Installation
 
 ## 1. Create a new Sveltekit project
@@ -67,5 +65,3 @@ The last step is to install RelicJS as a dependency in your project:
 ```bash
 $ npm install relicjs
 ```
-
-</div>

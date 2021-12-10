@@ -2,8 +2,6 @@
     import { Alert, Button, Icon } from 'relicjs/components'
 </script>
 
-<div class="prose">
-
 # Usage
 
 You can easily import any components from RelicJS and start using it right away in your Sveltekit project:
@@ -43,5 +41,3 @@ And that will give you the following result:
     <Icon name="contentSave" color="white" />
     <span class="pl-2">Click me</span>
 </Button>
-
-</div>

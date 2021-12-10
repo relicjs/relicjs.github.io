@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
-    "build:prod": "svelte-kit build && mv build docs && rm build",
+    "build:prod": "svelte-kit build && rm -rf docs && mv build docs && rm build && cp ./static/CNAME ./docs/CNAME",
     "package": "svelte-kit package",
     "preview": "svelte-kit preview",
     "check": "svelte-check --tsconfig ./tsconfig.json",

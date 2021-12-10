@@ -1,6 +1,6 @@
 <script>
 	export let menu = [
-        [null, '🚀 Getting Started'],
+        [null, 'Getting Started'],
         ['/guide/installation', 'Installation'],
         ['/guide/usage', 'Usage'],
     ]

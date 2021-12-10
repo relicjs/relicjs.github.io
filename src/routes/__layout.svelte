@@ -1,12 +1,5 @@
 <script>
-	import { onMount } from 'svelte';
-	import hljs from 'highlight.js';
-	import 'highlight.js/styles/night-owl.css';
 	import '../app.css';
-
-	onMount(() => {
-		hljs.highlightAll();
-	})
 </script>
 
 <div class="navbar mb-2 shadow-lg bg-neutral text-neutral-content">

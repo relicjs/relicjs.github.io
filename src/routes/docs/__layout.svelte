@@ -1,4 +1,4 @@
-<script context="module">
+<!-- <script context="module">
     export async function load({ page, fetch, session, stuff }) {
 		const url = `/docs/menu`;
 		const res = await fetch(url);
@@ -16,25 +16,38 @@
 			error: new Error(`Could not load ${url}`)
 		};
 	}
-</script>
+</script> -->
 
 <script>
-	export let menu;
+	let menu = [
+		// ACTIONS
+		[null, '👋 Actions', false],
+		// ['/actions/count-up', 'Count Up', true],
+		// COMPONENTS
+		[null, '🧱 Components', true],
+		['components/alert', 'Alert', true],
+		['components/badge', 'Badge', true],
+		['components/button', 'Button', true],
+		//PLUGINS
+		[null, '🔌 Plugins', true],
+		['plugins/clipboard-js', 'Button', true],
+	];
 </script>
 
 <div class="container mx-auto p-4">
 	<div class="grid grid-cols-12 gap-10">
 		<div class="col-span-12 md:col-span-4 xl:col-span-2">
             <ul class="menu py-3 shadow-lg bg-base-100 rounded-box">
-            {#each menu as item}
+            {#each menu as [route, label, isNew]}
+				{#if !route}
                 <li class="menu-title">
-                    <span class="uppercase">{item.label}</span>
+                    <span class="uppercase">{label}</span>
                 </li>
-                {#each item.submenu as submenu}
+				{:else}
                 <li>
-                    <a href={submenu.route} class="capitalize">{submenu.label}</a>
+                    <a href={`/docs/${route}`} class="capitalize">{label}</a>
                 </li>
-                {/each}
+				{/if}
             {/each}
             </ul>
 		</div>

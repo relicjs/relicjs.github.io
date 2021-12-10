@@ -38,15 +38,37 @@
     border-left: 9px solid #CCC;
 }
 
-.documentation blockquote p {
+blockquote p {
     margin: 0;
 }
 
-.hljs {
-    display: block;
-    overflow-x: auto;
-    padding: 0.5em;
-    color: #abb2bf;
-    background: #282c34;
-    border-radius: 12px;
+.lolight {
+    background: #F3F3F3;
+    border-radius: 15px;
+    padding: 15px;
+    overflow: auto;
+}
+
+.ll-nam { /* words */
+    color: #2196f3;
+}
+.ll-num { /* numbers */
+    color: #ec407a;
+}
+.ll-str { /* strings */
+    color: #43a047;
+}
+.ll-rex { /* regular expressions */
+    color: #ef6c00;
+}
+.ll-pct { /* operators, punctation */
+    color: #666;
+}
+.ll-key { /* keywords */
+    color: #555;
+    font-weight: bold;
+}
+.ll-com { /* comments */
+    color: #aaa;
+    font-style: italic;
 }

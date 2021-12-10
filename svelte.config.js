@@ -1,6 +1,5 @@
 import { mdsvex } from "mdsvex";
 import mdsvexConfig from "./mdsvex.config.js";
-// import adapter from "@sveltejs/adapter-auto";
 import adapter from '@sveltejs/adapter-static';
 import preprocess from "svelte-preprocess";
 
@@ -21,11 +20,11 @@ const config = {
 
   kit: {
     adapter: adapter(),
-		// appDir: '',
-		paths: {
-			// base: dev ? '' : '/relicjs.github.io',
-			base: '',
-		},
+		// app  Dir: '',
+		// paths: {
+		// 	// base: dev ? '' : '/relicjs.github.io',
+		// 	base: '',
+		// },
 
     // hydrate the <div id="svelte"> element in src/app.html
     target: "#svelte",

@@ -2,6 +2,10 @@
   import { CodeSnippet } from 'relicjs/components'
 </script>
 
+<p>
+  <img src="/relic-logo.png" alt="RelicJS Logo" class="w-32" />
+</p>
+
 <h1>Installation</h1>
 
 <h2>1. Create a new Sveltekit project</h2>
@@ -17,7 +21,7 @@ $ npm install`}
 </CodeSnippet>
 
 <blockquote>
-For more information on how to create and configure your Sveltekit project please refer to the official Sveltekit documentation at [kit.svelte.dev](https://kit.svelte.dev/docs).
+For more information on how to create and configure your Sveltekit project please refer to the official Sveltekit documentation at <a href="https://kit.svelte.dev/docs">kit.svelte.dev</a>.
 </blockquote>
 
 <h2>2. Add TailwindCSS to your project</h2>

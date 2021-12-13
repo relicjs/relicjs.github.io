@@ -5,7 +5,7 @@
 <div class="navbar mb-2 shadow-lg bg-neutral text-neutral-content">
 	<div class="px-2 mx-2 navbar-start">
 		<span class="text-lg font-bold">
-			<img src="/logo.png" class="h-10" alt="RelicJS Logo" />
+			<img src="/relic-logo-white.png" class="h-7" alt="RelicJS Logo" />
 		</span>
 	</div> 
 	<div class="hidden px-2 mx-2 navbar-center lg:flex">

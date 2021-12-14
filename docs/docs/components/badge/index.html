@@ -9,27 +9,95 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-c0662f3d.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-05c14c71.js">
+		<link rel="modulepreload" href="/_app/start-be95d024.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-146a7b72.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-0878dece.js">
+		<link rel="modulepreload" href="/_app/pages/docs/__layout.svelte-e1d58918.js">
+		<link rel="modulepreload" href="/_app/pages/docs/components/badge.svelte-b5e39cef.js">
 		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
 		<link rel="stylesheet" href="/_app/assets/vendor-c9c6e33a.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-47d45761.css">
 
 		<script type="module">
-			import { start } from "/_app/start-c0662f3d.js";
+			import { start } from "/_app/start-be95d024.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
 				session: {},
 				host: location.host,
 				route: true,
-				spa: true,
+				spa: false,
 				trailing_slash: "never",
-				hydrate: null
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-0878dece.js"),
+						import("/_app/pages/docs/__layout.svelte-e1d58918.js"),
+						import("/_app/pages/docs/components/badge.svelte-b5e39cef.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fdocs\u002Fcomponents\u002Fbadge",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
 			});
 		</script>
 	</head>
 	<body>
 		<div id="svelte">
+
+
+<div class="navbar mb-2 shadow-lg bg-neutral text-neutral-content"><div class="px-2 mx-2 navbar-start"><span class="text-lg font-bold"><img src="/relic-logo-white.png" class="h-7" alt="RelicJS Logo"></span></div> 
+	<div class="hidden px-2 mx-2 navbar-center lg:flex"><div class="flex items-stretch">
+		<a href="/guide/installation" class="btn btn-ghost btn-sm rounded-btn">Guide</a>
+		<a href="/docs/components/alert" class="btn btn-ghost btn-sm rounded-btn">Docs</a>
+		<a href="https://github.com/relicjs/relicjs" class="btn btn-ghost btn-sm rounded-btn">Contribute</a></div></div> 
+	<div class="navbar-end"><a href="https://github.com/relicjs/relicjs" class="btn btn-square btn-ghost"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a></div></div>
+  
+
+
+
+
+
+<div class="container mx-auto p-4"><div class="grid grid-cols-12 gap-10"><div class="col-span-12 md:col-span-4 xl:col-span-2"><ul class="menu py-3 shadow-lg bg-base-100 rounded-box"><li class="menu-title"><span class="uppercase">👋 Actions</span>
+                </li><li class="menu-title"><span class="uppercase">🧱 Components</span>
+                </li><li><a href="/docs/components/alert" class="capitalize">Alert</a>
+                </li><li><a href="/docs/components/badge" class="capitalize">Badge</a>
+                </li><li><a href="/docs/components/button" class="capitalize">Button</a>
+                </li><li class="menu-title"><span class="uppercase">🔌 Plugins</span>
+                </li><li><a href="/docs/plugins/clipboard-js" class="capitalize">Button</a>
+                </li></ul></div>
+		<div class="col-span-12 md:col-span-8 xl:col-span-10 documentation"><h1>Badges</h1>
+
+<h2>Example</h2>
+
+<div class="space-y-3"><div class="space-x-2"><div class=" badge badge-neutral badge-sm false">neutral</div>
+        <div class=" badge badge-primary badge-sm false">primary</div>
+        <div class=" badge badge-secondary badge-sm false">secondary</div>
+        <div class=" badge badge-accent badge-sm false">accent</div>
+        <div class=" badge badge-ghost badge-sm false">ghost</div></div></div>
+
+<h2>Usage</h2>
+
+<pre class="lolight"><code>&lt;script&gt;
+    import { Badge } from &#39;relicjs/components&#39;;
+&lt;/script&gt;
+
+&lt;Badge color=&quot;neutral&quot;&gt;neutral&lt;/Badge&gt;
+&lt;Badge color=&quot;primary&quot;&gt;primary&lt;/Badge&gt;
+&lt;Badge color=&quot;secondary&quot;&gt;secondary&lt;/Badge&gt;
+&lt;Badge color=&quot;accent&quot;&gt;accent&lt;/Badge&gt;
+&lt;Badge color=&quot;ghost&quot;&gt;ghost&lt;/Badge&gt;
+</code></pre>
+
+<h2>Reference</h2>
+
+<a href="https://daisyui.com/components/badge">https://daisyui.com/components/badge</a></div></div></div>
+
+
 
 			
 		</div>

@@ -20,7 +20,7 @@
 
 <CodeSnippet>
 {`<script>
-    import Badge from '$lib/components/Badge.svelte';
+    import { Badge } from 'relicjs/components';
 </script>
 
 <Badge color="neutral">neutral</Badge>

@@ -9,27 +9,123 @@
 
 		
 
-		<link rel="modulepreload" href="/_app/start-c0662f3d.js">
-		<link rel="modulepreload" href="/_app/chunks/vendor-05c14c71.js">
+		<link rel="modulepreload" href="/_app/start-be95d024.js">
+		<link rel="modulepreload" href="/_app/chunks/vendor-146a7b72.js">
+		<link rel="modulepreload" href="/_app/pages/__layout.svelte-0878dece.js">
+		<link rel="modulepreload" href="/_app/pages/guide/__layout.svelte-30e2de96.js">
+		<link rel="modulepreload" href="/_app/pages/guide/installation.svelte-aa947ad7.js">
 		<link rel="stylesheet" href="/_app/assets/start-464e9d0a.css">
 		<link rel="stylesheet" href="/_app/assets/vendor-c9c6e33a.css">
+		<link rel="stylesheet" href="/_app/assets/pages/__layout.svelte-47d45761.css">
 
 		<script type="module">
-			import { start } from "/_app/start-c0662f3d.js";
+			import { start } from "/_app/start-be95d024.js";
 			start({
 				target: document.querySelector("#svelte"),
 				paths: {"base":"","assets":""},
 				session: {},
 				host: location.host,
 				route: true,
-				spa: true,
+				spa: false,
 				trailing_slash: "never",
-				hydrate: null
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/_app/pages/__layout.svelte-0878dece.js"),
+						import("/_app/pages/guide/__layout.svelte-30e2de96.js"),
+						import("/_app/pages/guide/installation.svelte-aa947ad7.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "\u002Fguide\u002Finstallation",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
 			});
 		</script>
 	</head>
 	<body>
 		<div id="svelte">
+
+
+<div class="navbar mb-2 shadow-lg bg-neutral text-neutral-content"><div class="px-2 mx-2 navbar-start"><span class="text-lg font-bold"><img src="/relic-logo-white.png" class="h-7" alt="RelicJS Logo"></span></div> 
+	<div class="hidden px-2 mx-2 navbar-center lg:flex"><div class="flex items-stretch">
+		<a href="/guide/installation" class="btn btn-ghost btn-sm rounded-btn">Guide</a>
+		<a href="/docs/components/alert" class="btn btn-ghost btn-sm rounded-btn">Docs</a>
+		<a href="https://github.com/relicjs/relicjs" class="btn btn-ghost btn-sm rounded-btn">Contribute</a></div></div> 
+	<div class="navbar-end"><a href="https://github.com/relicjs/relicjs" class="btn btn-square btn-ghost"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg></a></div></div>
+  
+
+<div class="container mx-auto p-4"><div class="grid grid-cols-12 gap-10"><div class="col-span-12 md:col-span-4 xl:col-span-2"><ul class="menu py-3 shadow-lg bg-base-100 rounded-box"><li class="menu-title"><span class="uppercase">Getting Started</span>
+                </li><li><a class="capitalize" href="/guide/installation">Installation</a>
+                </li><li><a class="capitalize" href="/guide/usage">Usage</a>
+                </li></ul></div>
+		<div class="col-span-12 md:col-span-8 xl:col-span-10 documentation"><p><img src="/relic-logo.png" alt="RelicJS Logo" class="w-32"></p>
+
+<h1>Installation</h1>
+
+<h2>1. Create a new Sveltekit project</h2>
+
+<p>In order to get started using Relic.JS you will need to create a new Sveltekit project and add Tailwind and DaisyUI to it.</p>
+
+<p>Start by creating a new project.</p>
+
+<div class="alert alert-error"><div class="flex-1"><svg class="inline-block text-error svelte-vivkue" style="width:24px;height:24px;" viewBox="0 0 24 24"><path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"></path></svg> <div class="mx-2"><h4>Lorem ipsum dolor sit amet, consectetur adip!</h4></div></div></div>
+
+<pre class="lolight"><code>$ npm init svelte@next my-app
+$ cd my-app
+$ npm install</code></pre>
+
+<blockquote>For more information on how to create and configure your Sveltekit project please refer to the official Sveltekit documentation at <a href="https://kit.svelte.dev/docs">kit.svelte.dev</a>.
+</blockquote>
+
+<h2>2. Add TailwindCSS to your project</h2>
+
+For the sake of simplicity we will be using the awesome [Svelte Add](https://github.com/svelte-add/svelte-add) library for that purpose. It simplifies the process of installing Tailwind and PostCSS with just one command.
+
+<pre class="lolight"><code>$ npx svelte-add@latest tailwindcss</code></pre>
+
+<blockquote>We strongly recommend that you add the `Typography` and `Forms` plugins for Tailwind.
+</blockquote>
+
+<p>For usage in development environment it is also recommended to disable the Tailwind JIT mode in your `tailwind.config.cjs` config file:</p>
+
+<pre class="lolight"><code> const config = {
+    // ...
+
+	// mode: &#39;jit&#39;, // &lt;&lt;&lt; comment this line
+    
+    // ...
+} </code></pre>
+
+<p>3. Add DaisyUI as a Tailwind plugin</p>
+
+<p>You won&#39;t be using DaisyUI directly when dealing with RelicJS components but it should be installed and configured in your project.</p>
+
+<pre class="lolight"><code>$ npm i daisyui</code></pre>
+
+<p>And add daisyUI to your `tailwind.config.cjs`:</p>
+
+<pre class="lolight"><code>module.exports = {
+
+    plugins: [
+      require(&#39;daisyui&#39;),
+    ],
+
+  }</code></pre>
+
+<blockquote>For more information on how to install DaisyUI please check the official docs at [https://daisyui.com/docs/install](https://daisyui.com/docs/install)
+</blockquote>
+
+<h2>4. Install RelicJS</h2>
+
+<p>The last step is to install RelicJS as a dependency in your project:</p>
+
+<pre class="lolight"><code>$ npm install relicjs</code></pre></div></div></div>
+
+
 
 			
 		</div>

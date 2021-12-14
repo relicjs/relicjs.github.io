@@ -1,0 +1,1 @@
+import{S as e,i as n,s as a}from"../../chunks/vendor-146a7b72.js";function o({error:s,status:t}){return{status:301,redirect:"/guide/installation"}}class u extends e{constructor(t){super();n(this,t,null,null,a,{})}}export{u as default,o as load};

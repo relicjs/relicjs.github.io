@@ -19,7 +19,7 @@
 
 <CodeSnippet>
 {`<script>
-    import { ClipboardButton } from '$lib/plugins';
+    import { ClipboardButton } from 'relicjs/plugins';
 </script>
 
 <div id="contentDiv">

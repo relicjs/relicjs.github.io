@@ -14,7 +14,7 @@ const config = {
   ],
 
   kit: {
-    ssr: false,
+    // ssr: false,
     adapter: adapter(),
 		// app  Dir: '',
 		// paths: {
